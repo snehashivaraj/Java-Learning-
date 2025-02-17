@@ -1,4 +1,4 @@
-//upcasting changing to class type 
+//upcasting changing to class type    : changing the reference type to parent class in an inheritance hierarchy 
 
 public class UpcastingExample{	//using builtin class
 
@@ -7,6 +7,13 @@ public class UpcastingExample{	//using builtin class
 		java.lang.Byte by = 88;
 		java.io.Serializable se = by;    //upcasting 
 		System.out.println(se);
+
+		java.lang.Number num = by;
+		System.out.println(num);
+
+		Object ob = by;
+		System.out.println(o);
+
 	}
 
 }
@@ -20,3 +27,4 @@ class UpcastingExampleMain{
 
 	}
 }
+//uses : Achieving polymorphism, code resusability, avoiding and duplication 
