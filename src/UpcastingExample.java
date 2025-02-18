@@ -6,30 +6,46 @@ public class UpcastingExample{	//using builtin class
 
 		java.lang.Byte by = 88;
 		java.io.Serializable se = by;    //upcasting 
-		System.out.println(se);
+		System.out.println("Byte to Serializable "+se);
 
 		java.lang.Number num = by;
-		System.out.println(num);
+		System.out.println("Byte to number "+num);
 
 		Object ob = by;
-		System.out.println(o);
+		System.out.println("Byte to Object " +ob);
 
-
-
-		//we can change the parent after upcasting 
-		// now byte is changed to serializable 	
 
 		
 
 	}
 
 }
+//Downcasting is converting the parent class reference back to the orgiginal child class reference 
+
+class DownCasting{
+
+	public static void downcasting(){
+
+		Short s = 66;
+		java.lang.Number num = s;
+
+		System.out.println("Number "+num);
+
+		System.out.println("Downcasting....");
+
+		Short s1 = (Short)num;
+
+		System.out.println("Short "+s1);	
+	}
+}
+
 
 class UpcastingExampleMain{
 
 	public static void main(String... fgiodfgj){
 
 		UpcastingExample.changingtype();
+		DownCasting.downcasting();
 
 
 	}
